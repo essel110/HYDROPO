@@ -6,10 +6,9 @@
 //   	header('location: index.php#join_us');
 //   }
 
-   if( $_POST["water_level"] || $_POST["ph"] ) {
-      
-      $water_level = $_POST["water_level"];
-      $ph = $_POST["ph"];
+   if( $_GET["water_level"] || $_GET["ph"] ) {
+      $water_level = $_GET["water_level"];
+      $ph = $_GET["ph"];
       $action = 0;
 
       if ($water_level >= 6 && $ph >= 6 ) {
